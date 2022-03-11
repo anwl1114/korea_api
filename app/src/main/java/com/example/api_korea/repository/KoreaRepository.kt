@@ -18,11 +18,13 @@ class KoreaRepository {
             ) {
                 if(response.isSuccessful) {
                     mCallback.loadComplete(response.body().data)
+                } else {
+                    mCallback.responseIsNotSuccesful()
                 }
             }
 
             override fun onFailure(call: Call<Item>, t: Throwable) {
-
+                mCallback.loadFail()
             }
         })
     }
