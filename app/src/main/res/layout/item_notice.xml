@@ -34,18 +34,18 @@
             android:textSize="18sp"/>
 
         <TextView
-            android:id="@+id/tiemcode"
+            android:id="@+id/timecode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tiemcode"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/vlaue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vlaue"
-            android:textSize="18sp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/value"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/vlaue"-->
+<!--            android:textSize="18sp"/>-->
     </LinearLayout>
 
     <ImageView
