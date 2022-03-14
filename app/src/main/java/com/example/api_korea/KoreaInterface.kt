@@ -7,6 +7,13 @@ import retrofit2.http.Query
 
 interface KoreaInterface {
     @GET("MetalService")
-    fun getKoreaData (@Query("serviceKey")serviceKey : String,
-                      @Query("resultType")resultType:String) : Call<Item>
+    fun getKoreaData (@Query("serviceKey") serviceKey: String,
+                      @Query("pageNo") pageNo: Int,
+                      @Query("numOfRows") numOfRows: Int,
+                      @Query("resultType") resultType:String,
+                      @Query("date") date:String,
+                      @Query("stationcode") stationcode:String,
+                      @Query("itemcode") itemcode:String,
+                      @Query("timecode") timecode: String
+    ) : Call<Item>
 }

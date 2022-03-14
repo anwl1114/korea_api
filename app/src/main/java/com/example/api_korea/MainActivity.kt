@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun KoreaapiWork() {
         val service = KoreaClient.koreaInterface
-        service.getKoreaData(getString(R.string.apikey), "JSON")
+        service.getKoreaData(getString(R.string.apikey), 1,10,"json", "20210828", "1","90303", "RH02")
             .enqueue(object : Callback<Item> {
                 override fun onResponse(
                     call: Call<Item>,
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 ) {
                     if (response.isSuccessful) {
                         Log.d("성공", response.body().toString())
-//                        val result = response.body()?.metalService?.get(1)?.row
+//                        val result = response.body()?.metalService?.get(1).row
 //                        koreaadapter.submitList(result!!)
                     }
                 }
