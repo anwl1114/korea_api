@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="10dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_weight="8"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
+            android:id="@+id/sdate"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="측정도"
-            android:paddingRight="8dp"
-            android:layout_weight="1" />
+            android:text="@string/sdate"
+            android:textSize="25sp"/>
 
         <TextView
-            android:id="@+id/tv_code"
-            android:layout_width="wrap_content"
+            android:id="@+id/startcode"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="code" />
+            android:text="@string/startcode"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/itemcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itemcode"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tiemcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tiemcode"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vlaue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vlaue"
+            android:textSize="18sp"/>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.3dp"
-        android:background="@color/black"
-        android:layout_marginTop="20dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_list" />
+
 </LinearLayout>

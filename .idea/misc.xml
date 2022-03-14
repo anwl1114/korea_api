@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/joohyun.ahn/AndroidStudioProjects/api_korea/app/src/main/res/drawable/ic_list.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/joohyun.ahn/AndroidStudioProjects/api_korea/app/src/main/res/layout/activity_main.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/joohyun.ahn/AndroidStudioProjects/api_korea/app/src/main/res/layout/item_notice.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/joohyun.ahn/AndroidStudioProjects/api_korea/app/src/main/res/layout/item_notice.xml" value="0.33" />
       </map>
     </option>
   </component>
