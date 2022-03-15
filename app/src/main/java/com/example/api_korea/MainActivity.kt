@@ -38,9 +38,9 @@ class MainActivity : AppCompatActivity() {
                     response: Response<Item>
                 ) {
                     if (response.isSuccessful) {
-                        Log.d("성공", response.body().toString())
-//                        val result = response.body()?.metalService?.get(1).row
-//                        koreaadapter.submitList(result!!)
+//                        Log.d("성공", response.body().toString())
+                        val result = response.body()?.metalService?.get(1).row
+                        koreaadapter.submitList(result!!)
                     }
                 }
                 override fun onFailure(call: Call<Item>, t: Throwable) {
@@ -49,5 +49,3 @@ class MainActivity : AppCompatActivity() {
             })
     }
 }
-
-
